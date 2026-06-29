@@ -255,6 +255,31 @@
         @media (max-width: 580px) {
             .two-cols { grid-template-columns: 1fr; }
         }
+
+        @media (max-width: 600px) {
+            .price-table thead { display: none; }
+            .price-table tr {
+                display: block;
+                margin-bottom: 1.25rem;
+                border: 1px solid var(--border);
+                border-radius: 8px;
+                overflow: hidden;
+            }
+            .price-table td {
+                display: block;
+                padding: 0.75rem 1rem;
+                border-bottom: 1px solid var(--border);
+            }
+            .price-table td:last-child { border-bottom: none; }
+
+            .step h2 { font-size: 1.4rem; }
+            .hero h1 { font-size: 2rem; }
+            .container { padding: 0 1rem; }
+            .step { padding: 3rem 0; }
+            .highlight { padding: 1.25rem 1.25rem; }
+            .solution-card { padding: 1.25rem; }
+            .signature-box { padding: 1.25rem; }
+        }
         .col-box {
             background: var(--bg2);
             border: 1px solid var(--border);
